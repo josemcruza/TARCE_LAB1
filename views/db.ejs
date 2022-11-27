@@ -6,7 +6,7 @@
 
 <body>
 
-<h2>Database Results</h2>
+<h2>Lista de precios de los servicios</h2>
 
 <table>
 	<tr>
@@ -15,7 +15,10 @@
 	</tr>
 	
 	<% results.forEach(function(r) { %>
-		<tr><td><%= r.id %> - <%= r.name %></td></tr>
+		<tr>
+			<td><%= r.name %></td>
+			<td><%= r.price%>€</td>
+		</tr>
 	<% }); %>
 	
 </table>

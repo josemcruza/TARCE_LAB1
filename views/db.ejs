@@ -10,10 +10,13 @@
 
 <table>
 	<tr>
-	<% results.forEach(function(r) { %>
-		<td><%= r.id %> - <%= r.name %></td>
-	<% }); %>
+		<th>Actividades ofrecidas
 	</tr>
+	
+	<% results.forEach(function(r) { %>
+		<tr><td><%= r.id %> - <%= r.name %></td></tr>
+	<% }); %>
+	
 </table>
 
 </body>

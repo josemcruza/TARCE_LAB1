@@ -13,7 +13,6 @@
 		<th>Actividad
 		<th>Duración
 		<th>Hora
-		<th>Imagen referencia
 	</tr>
 	
 	<% results.forEach(function(r) { %>
@@ -21,10 +20,34 @@
 			<td><%= r.name %></td>
 			<td><%= r.duration%>horas</td>
 			<td><%= r.time%>horas</td>
-			<td></td>
 		</tr>
 	<% }); %>
 	
+</table>
+
+<table>
+	<tr>
+		<td>
+			<img src="public/images/nublo.jpg">
+		</td>
+		<td>
+			<img src="public/images/tamadaba.jpg">
+		</td>
+		<td>
+			<img src="public/images/vegueta.jpg">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="public/images/cueva.jpg">
+		</td>
+		<td>
+			<img src="public/images/kayak.jpg">
+		</td>
+		<td>
+			<img src="public/images/karting.jpg">
+		</td>
+	</tr>
 </table>
 
 <p>Para conocer el precio de las actividades de ocio fuera del hotel (excursiones, visitas, etc.) preguntar en recepción.</p>

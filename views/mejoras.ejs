@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+
+<h2>Lista de precios de los servicios</h2>
+
+<table>
+	<tr>
+		<th>Actividad
+		<th>Duración
+		<th>Hora
+		<th>Imagen referencia
+	</tr>
+	
+	<% results.forEach(function(r) { %>
+		<tr>
+			<td><%= r.name %></td>
+			<td><%= r.duration%>horas</td>
+			<td><%= r.time%>horas</td>
+			<td></td>
+		</tr>
+	<% }); %>
+	
+</table>
+
+<p>Para conocer el precio de las actividades de ocio fuera del hotel (excursiones, visitas, etc.) preguntar en recepción.</p>
+
+</body>
+</html>

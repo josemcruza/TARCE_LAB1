@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22-nov-2021, 8:39:55
+    Author     : Aula
+*/
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 50px;
+    background-color: #7DF4FD;
+}
+
+h1 {
+    letter-spacing: 4px;
+    font-size: x-large;
+    color: #39088D;
+    font-weight: normal;
+}
+
+h2 {
+    letter-spacing: 2px;
+    font-size: large;
+    color: #0D097E;
+    font-weight: normal;
+}
+
+table {
+    margin: auto;
+    padding: 2px;
+    background-color: #B4CAF7;
+    border:2px solid;
+    border-color: #94AEE3;
+}
+
+th, td {
+   width: 250px;
+   text-align: center;
+   vertical-align: top;
+   border: 1px solid #000;
+}
+
+a:link {
+    color: #be7429;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a:link:hover {
+    color: #be7429;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+input[type=text] {
+    font-family: DejaVu Sans Mono, monospace;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    font-family: DejaVu Sans Mono, monospace;
+    border-color:#333;
+}
+
+input[type=submit] {
+    font-family: DejaVu Sans Mono, monospace;
+    padding:5px 15px; 
+    background:#B4CAF7; 
+    border:2px solid;
+    border-color: #94AEE3;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 15px; 
+}

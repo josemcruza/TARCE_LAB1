@@ -9,9 +9,11 @@
 <h2>Database Results</h2>
 
 <table>
+	<tr>
 	<% results.forEach(function(r) { %>
-		<tr><%= r.id %> - <%= r.name %></tr>
+		<li><%= r.id %> - <%= r.name %></li>
 	<% }); %>
+	</tr>
 </table>
 
 </body>

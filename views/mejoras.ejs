@@ -1,57 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel='stylesheet' href='/stylesheets/style.css' />
-</head>
-
-<body>
-<h1>Hotel JMCA</h1>
-<h2>Actividades de ocio fuera del hotel</h2>
-
-<table>
-	<tr>
-		<th>Actividad
-		<th>Duración
-		<th>Hora
-	</tr>
-	
-	<% results.forEach(function(r) { %>
-		<tr>
-			<td><%= r.name %></td>
-			<td><%= r.duration%> horas</td>
-			<td><%= r.time%></td>
-		</tr>
-	<% }); %>
-	
-</table>
-<br>
-<h3>Imágenes de referencia</h3>
-<table>
-	<tr>
-		<td>
-			<img src="/images/nublo.jpg" width=200 height=100>
-		</td>
-		<td>
-			<img src="/images/tamadaba.jpg" width=200 height=100>
-		</td>
-		<td>
-			<img src="/images/vegueta.jpg" width=200 height=100>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<img src="/images/cueva.jpeg" width=200 height=100>
-		</td>
-		<td>
-			<img src="/images/kayak.jpg" width=200 height=100>
-		</td>
-		<td>
-			<img src="/images/karting.jpg" width=200 height=100>
-		</td>
-	</tr>
-</table>
-
-<p>Para conocer el precio de las actividades de ocio fuera del hotel (excursiones, visitas, etc.) preguntar en recepción.</p>
-
-</body>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+	<br>
+    <h2>Bienvenido al <%= title %></h2>
+	<br>
+	<div>
+		<h3>Carita ascii</h3>
+		<p><%= face %></p>
+	</div>
+	<br>
+	<p>Si desea navegar ver las actividades que se organizan y los precios, pulse un botón</p>
+	<br>
+	<form method="get" action="/servicios">
+        <input type="submit" value="Ver Servicios" />
+    </form>
+	<br>
+	<form method="get" action="/db">
+        <input type="submit" value="Ver Lista de Precios" />
+    </form>
+	<br>
+	<form method="get" action="/">
+        <input type="submit" value="Ver Inicio" />
+    </form>
+  </body>
 </html>

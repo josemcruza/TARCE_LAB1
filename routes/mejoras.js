@@ -1,30 +1,13 @@
-//** BD
-
-const { Pool } = require('pg');
-const pool = new Pool({
-	connectionString: process.env.DATABASE_URL,
-	ssl: {
-		rejectUnauthorized: false
-	}
-});
-
-//** BD
-
 var express = require('express');
 var router = express.Router();
+var cool = require('cool-ascii-faces');
 
-/* GET home page */
 
-router.get('/', async (req, res) => {
-	try {
-		const client = await pool.connect();
-		const result = await client.query('SELECT * FROM mejoras');
-		const results = { 'results': (result) ? result.rows : null};
-		res.render('mejoras', results);
-		client.release();
-	} catch (err) {
-		console.error(err);
-		res.send("Error " + err);
-	}
-})
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  var randomFace = cool();
+  console.log(randomFace);
+  res.render('mejoras', { title: 'Hotel JMCA', face: randomFace });
+});
+
 module.exports = router;
